@@ -24,8 +24,6 @@ for face in known_face_list:
     known_face_encodings.append(face_encoding)
     known_face_names.append(face[1])
 
-print(known_face_encodings, known_face_names)
-
 face_id = 1
 face_names = []
 names_body_temp = {}
@@ -44,6 +42,7 @@ async def soundGoGo ():
 
 
 while True:
+    print(face_names)
     old_len = len(face_names)
     ret, frame = video_capture.read()
 
